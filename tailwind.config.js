@@ -11,36 +11,36 @@ export default {
 	theme: {
 		extend: {
 			height: {
-				navbarHeight: "80px",
+				navbarHeight: "150px",
 			},
 			padding: {
-				navbarPadding: "80px",
+				navbarPadding: "150px",
 			},
 
 			fontFamily: {
-				goldman: ["Goldman", "sans-serif"], // Add Goldman font
 				manrope: ["Manrope", "sans-serif"], // Add Manrope font
+				playfair: ["Playfair Display", "serif"], // Add Playfair Display font
+				openSans: ["Open Sans", "sans-serif"], // Add Open Sans font
 			},
 
 			colors: {
 				primary: {
-					DEFAULT: "#92d050", // Base primary color
-					100: "#e8f5e0", // Lighter tone
-					200: "#d1ebc1", // Light tone
-					300: "#bae0a2", // Slightly lighter tone
-					400: "#a3d683", // Lightest tone
-					500: "#92d050", // Base primary color
-					600: "#7bb342", // Slightly darker tone
-					700: "#649635", // Dark tone
-					800: "#4d7928", // Darker tone
-					900: "#365c1b", // Darkest tone
+					DEFAULT: "#900B52", // Base primary color
+					100: "#f2e0eb", // Lighter tone (very light purple)
+					200: "#e5c1d7", // Light tone
+					300: "#d8a2c3", // Slightly lighter tone
+					400: "#cb83af", // Lightest tone
+					500: "#900B52", // Base primary color
+					600: "#7a0946", // Slightly darker tone
+					700: "#63073a", // Dark tone
+					800: "#4d052e", // Darker tone
+					900: "#360322", // Darkest tone
 				},
 				lightGrey: "#d2d6dd",
 				grey: "#747681",
 				darkGrey: "#3f4144",
 				error: "#ff5630",
 				success: "#22c55e",
-				empaiBlack: "#212b36",
 			},
 			backgroundColor: {
 				bgColor: "#ffffff",

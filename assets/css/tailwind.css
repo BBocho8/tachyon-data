@@ -1,0 +1,307 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  
+  body {
+    @apply pt-navbarPadding font-manrope;
+  }
+  
+}
+
+@layer components {
+
+
+
+
+  .btn {
+    @apply bg-primary hover:bg-primary-400 text-white py-1.5 px-4 rounded 
+  }
+
+  .btn-secondary {
+
+    @apply bg-transparent border border-black text-black py-2 px-4 rounded 
+  }
+
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+.logo {
+  @apply w-72 mx-auto;
+}
+
+.navbar-desktop {
+  @apply z-[999999] backdrop-blur-[10px] bg-opacity-20 bg-white flex justify-center items-center w-full h-navbarHeight pt-[0.7em] pb-[0.7em] fixed top-0;
+}
+
+.navbar-wrapper {
+  @apply flex justify-between items-center w-[85%] max-w-none text-lg;
+}
+
+.contact-button {
+  @apply text-white font-bold bg-primary pt-4 px-10 flex justify-center items-center rounded-lg;
+}
+
+.navbar-menu {
+  @apply flex justify-center items-center gap-8 font-manrope;
+}
+
+.navbar-menu a {
+  @apply text-black text-lg;
+}
+
+.navbar-menu a.active {
+  @apply text-primary font-extrabold;
+}
+
+/* Burger Menu */
+.burger-menu {
+  @apply hidden; /* Hidden by default */
+  @apply w-10 h-10 cursor-pointer;
+}
+
+.burger-icon {
+  @apply w-10 h-10; /* Adjust size as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 1084px) {
+  .burger-menu {
+    @apply block; /* Show burger menu only on small screens */
+    @apply flex justify-center items-center;
+  }
+
+  .navbar-menu {
+    @apply hidden; /* Hide the menu by default on small screens */
+    @apply absolute top-full left-0 w-full bg-white bg-opacity-90;
+    @apply flex-col gap-4 p-4;
+  }
+
+  .navbar-menu.active {
+    @apply flex; /* Show the menu when active */
+  }
+}
+
+/* END OF NAVBAR */
+
+/* FOOTER */
+
+.footer-container {
+@apply bg-[url('/assets/images/footer-header.png')] bg-cover bg-[0%] py-[4%]  pl-[20%] flex flex-col ;
+}
+
+.footer-wrapper {
+  @apply w-[60%] flex flex-col gap-8
+}
+
+.footer-text-wrapper {
+  @apply flex justify-between items-center 
+}
+
+.footer-paragraph {
+  @apply text-xl text-white 
+}
+
+.footer-links {
+  @apply flex gap-8 text-xl font-medium 
+}
+
+.footer-links a {
+  @apply text-white hover:underline
+}
+
+
+/* END OF FOOTER */
+
+/* IMPRIT PAGE */
+
+.legal-content {
+ @apply max-w-3xl mx-auto p-5
+}
+
+.legal-content h1 {
+  @apply text-4xl mb-6
+}
+
+.legal-content h2 {
+  @apply text-2xl mt-8 mb-4
+}
+
+.legal-content p {
+  @apply mb-4
+}
+
+.legal-content a {
+  @apply text-primary underline
+}
+
+.legal-content ul {
+  @apply ml-6 mb-4
+}
+
+/* END OF IMPRINT */
+
+/* Language Switcher */
+
+.language-switcher {
+ @apply relative inline-block
+}
+
+.language-button {
+  @apply flex items-center bg-transparent border-none cursor-pointer py-2 px-4 text-base
+}
+
+.language-button img {
+  @apply w-8 h-8
+}
+
+.arrow-icon {
+  @apply w-4 h-4 ml-2
+}
+
+.language-dropdown {
+ @apply hidden absolute top-full right-0 bg-white border border-gray-300 rounded shadow-sm z-50 min-w-[180px]
+}
+
+.language-option {
+  @apply flex items-center gap-2 py-2 px-4 no-underline text-primary whitespace-nowrap 
+}
+
+.language-option:hover {
+  @apply bg-primary-100
+}
+
+/* END OF LANGUAGE SWITCHER */
+
+/* COOKIE */
+
+.cookie-container {
+  @apply flex justify-end items-center pr-4
+}
+
+.cookie-button {
+  @apply py-4 px-8 bg-white text-black border border-black rounded cursor-pointer my-6 flex items-center
+}
+
+.cookie-button button {
+  @apply text-sm
+}
+
+.cookie-icon {
+  @apply w-5 h-5 mr-2
+}
+
+/* END OF COOKIE */
+
+/* HOME PAGE HEADER */
+
+.hero-section {
+  @apply bg-[url('/assets/images/home-header.png')] bg-cover bg-[0%] pt-[8%] pb-[8%] min-h-[400px] pl-[20%] ;
+}
+
+.hero-wrapper {
+  @apply w-[40%] flex flex-col gap-4 
+}
+
+.hero-title {
+  @apply font-playfair text-4xl text-white font-medium 
+}
+
+.hero-paragraph {
+  @apply text-xl text-white font-light
+}
+
+/* END OF HOME HEADER */
+
+/* START OF ABOUT US HOMEPAGE */
+
+.about-section {
+  @apply flex flex-col py-24 
+}
+
+.about-wrapper {
+  @apply w-[60%] mx-auto
+}
+
+.about-title {
+  @apply text-5xl font-playfair 
+}
+
+.about-paragraph {
+  @apply text-2xl font-light text-left mt-4
+}
+
+.about-image-wrapper {
+  @apply flex flex-col justify-center mt-16 max-w-4xl mx-auto
+}
+
+/* END OF ABOUT US HOMEPAGE */
+
+/* START OF LEISTUNGEN HOMEPAGE */
+
+.leistungen-section {
+  @apply bg-primary-500 flex py-16 items-center 
+}
+
+.leistungen-img-wrapper {
+@apply w-[30%]
+}
+
+
+
+.leistungen-text-wrapper {
+  @apply w-[50%] flex flex-col gap-4 pl-16
+}
+
+.leistungen-title {
+  @apply text-5xl font-playfair text-white mb-4
+}
+.leistungen-paragraph {
+  @apply text-2xl font-light text-white
+}
+
+/* END OF LEISTUNGEN HOMEPAGE */
+
+/* START OF WHY TACHYON HOMEPAGE */
+
+.why-tachyon-section {
+  @apply flex py-24 items-center flex-col
+}
+
+.why-tachyon-wrapper {
+@apply w-[60%] mx-auto
+}
+
+.why-title {
+  @apply text-5xl font-playfair mb-16
+}
+
+.reason-wrapper {
+  @apply flex flex-col gap-4 mt-8
+}
+
+.reason-title-wrapper {
+  @apply flex items-center gap-4
+}
+
+.reason-img {
+  @apply w-10 h-10
+}
+
+.reason-title {
+  @apply text-2xl font-semibold font-openSans 
+}
+
+.reason-paragraph {
+  @apply text-xl 
+}
+
+/* END OF WHY TACHYON HOMEPAGE */
+
+}

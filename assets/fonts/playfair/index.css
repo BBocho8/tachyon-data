@@ -1,0 +1,31 @@
+/* Regular (400) */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./PlayfairDisplay-Medium.ttf') format('truetype');
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+/* ExtraBold (800) */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./PlayfairDisplay-ExtraBold.ttf') format('truetype');
+}
