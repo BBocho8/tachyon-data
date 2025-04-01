@@ -42,16 +42,20 @@
       })->limit(3); // Limit to 3 posts
       ?>
       <?php foreach ($relatedPosts as $post): ?>
-        <div class="overflow-hidden bg-white rounded-lg shadow-md">
-          <?php if ($image = $post->images()->first()): ?>
-            <img src="<?= $image->url() ?>" alt="<?= $post->title() ?>" class="object-cover w-full h-48">
-          <?php endif ?>
-          <div class="p-6">
-            <h3 class="mb-2 text-xl font-semibold"><?= $post->title() ?></h3>
-            <p class="mb-4 text-gray-600 line-clamp-5"><?= $post->description() ?></p>
-            <a href="<?= $post->url() ?>" class="font-semibold text-primary hover:underline"><?= t("blog.readmore") ?> →</a>
+        <a href="<?= $post->url() ?>">
+          <div class="h-full overflow-hidden bg-white ">
+            <?php if ($image = $post->images()->first()): ?>
+              <img src="<?= $image->url() ?>" alt="<?= $post->title() ?>" class="object-cover w-full h-48">
+            <?php endif ?>
+            <div class="flex flex-col p-2">
+              <div class="my-4">
+                <span class="px-3 py-2 font-bold capitalize bg-white border-2 rounded border-primary text-primary"><?= $post->category() ?></span>
+              </div>
+              <h3 class="mb-2 text-2xl font-playfair"><?= $post->title() ?></h3>
+              <p class="mb-4 text-lg text-gray-600 line-clamp-4"><?= $post->description() ?></p>
+            </div>
           </div>
-        </div>
+        </a>
       <?php endforeach ?>
     </div>
   </div>

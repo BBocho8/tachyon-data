@@ -5,7 +5,6 @@
 
   <?php snippet('sections/blog/blog-header', ['page' => $page]) ?>
   <?php snippet('sections/blog/latest-articles', ['page' => $page]) ?>
-  <?php snippet('sections/blog/contact') ?>
 
 
 </main>

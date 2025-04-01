@@ -33,7 +33,10 @@
     <!-- SVG Icon -->
     <img src="/assets/icons/cookie-settings.svg" alt="Cookie Settings Icon" class="cookie-icon">
     <!-- Button Text -->
-    Ihre Datenschutzeinstellungen
+    <span class="cookie-button-text">
+
+      Ihre Datenschutzeinstellungen
+    </span>
   </button>
 </div>
 

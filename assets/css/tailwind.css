@@ -186,11 +186,11 @@
 }
 
 .cookie-button {
-  @apply py-4 px-8 bg-white text-black border border-black rounded cursor-pointer my-6 flex items-center
+  @apply py-2 px-4 bg-white text-black border border-black rounded cursor-pointer my-3 flex items-center
 }
 
-.cookie-button button {
-  @apply text-sm
+.cookie-button-text {
+  @apply text-xs
 }
 
 .cookie-icon {

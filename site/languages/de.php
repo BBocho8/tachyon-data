@@ -10,6 +10,8 @@ return [
     'name' => 'Deutsch',
     'translations' => [
         'home.contact' => 'Kontakt',
+        "home.moreInformation" => 'Mehr Information über uns',
+        "home.allArticles" => 'Alle Blogeinträge',
         'faq.title' => 'FAQ - Häufig gestellte Fragen rund um empAI',
         'blog.title' => 'Letzte Artikel',
         'blog.zuruck' => 'Zurück zur Blogübersicht',
@@ -17,6 +19,8 @@ return [
         'blog.morearticles' => 'Weitere Blogartikel',
         'blog.next' => 'Weiter',
         'blog.previous' => 'Zurück',
+        'blog.mehrErfahren' => 'Mehr erfahren',
+        'blog.unsereBlogBeiträge' => 'Unsere Blogbeiträge',
         'hero.efficiency' => 'Effizienz',
         'contact.consumeLess' => 'verbrauchen Sie weniger',
         'contact.produceMore' => 'Erreichen Sie mehr',

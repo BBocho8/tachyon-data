@@ -4,6 +4,7 @@
 <?php snippet('sections/homepage/about-us') ?>
 <?php snippet('sections/homepage/leistungen') ?>
 <?php snippet('sections/homepage/why-tachyon') ?>
+<?php snippet('sections/homepage/more-information') ?>
 
 <!-- <?php snippet('sections/homepage/hero', ['page' => $page]) ?>
 <?php snippet('sections/homepage/form', ['section' => $page->Form()->toStructure()->first()]) ?>
